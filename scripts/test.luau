@@ -1,11 +1,11 @@
 local function loadTests()
-	require("@tests/isEven")()
-	require("@tests/isOdd")()
+	require("../tests/isEven")()
+	require("../tests/isOdd")()
 end
 
 local function runTests()
-	local frktest = require("@frktest/")
-	local lune_console_reporter = require("@frktest/reporters/lune_console_reporter")
+	local frktest = require("../lune_packages/frktest")
+	local lune_console_reporter = frktest._reporters.lune_console_reporter
 
 	lune_console_reporter.init()
 	local success = frktest.run()

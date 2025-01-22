@@ -1,4 +1,4 @@
-local frktest = require("@frktest/frktest")
+local frktest = require("../lune_packages/frktest")
 local module = require("..")
 local isOdd = module.isOdd
 local test = frktest.test
